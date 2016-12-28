@@ -1,0 +1,280 @@
+﻿#page-top, #page-top  h2 {
+font-family: "Segoe UI";
+}
+#page-top .semiLight {
+    text-transform:none;
+    font-family: "Segoe UI";    
+    font-weight:normal;
+}
+#page-top .semiBold {    
+    font-weight:700;
+    text-transform:none;
+    font-family: "Segoe UI"; 
+}
+#page-top header .header-content-inner p {
+margin-bottom: 20px;
+}
+#mainNav.navbar-default.affix {
+    background-color:#222;
+}
+#page-top #mainNav.navbar-default .nav > li > a:hover, #page-top #mainNav.navbar-default .nav > li > a:focus:hover, #page-top #mainNav.navbar-default.affix .nav > li > a:focus, #page-top #mainNav.navbar-default .nav > li.active > a,#page-top #mainNav.navbar-default .nav > li.active > a:focus, #page-top #mainNav.navbar-default.affix .nav > li > a:hover, #page-top #mainNav.navbar-default.affix .nav > li > a:focus:hover {
+color: #6DB9DF !important;
+}
+#page-top #mainNav.navbar-default.affix .nav > li > a {
+color: #fff;
+}
+
+#logolink {
+    display: block;
+    width: auto;
+    float: left;
+    height: auto;
+}
+/*checkbox*/
+.checkbox label:after,
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+    .checkbox .cr .cr-icon,
+    .radio .cr .cr-icon {
+        position: absolute;
+        font-size: .8em;
+        line-height: 0;
+        top: 50%;
+        left: 20%;
+    }
+
+    .radio .cr .cr-icon {
+        margin-left: 0.04em;
+    }
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+    .checkbox label input[type="checkbox"] + .cr > .cr-icon,
+    .radio label input[type="radio"] + .cr > .cr-icon {
+        transform: scale(3) rotateZ(-20deg);
+        opacity: 0;
+        transition: all .3s ease-in;
+    }
+
+    .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+    .radio label input[type="radio"]:checked + .cr > .cr-icon {
+        transform: scale(1) rotateZ(0deg);
+        opacity: 1;
+    }
+
+    .checkbox label input[type="checkbox"]:disabled + .cr,
+    .radio label input[type="radio"]:disabled + .cr {
+        opacity: .5;
+    }
+
+#contact .checkbox label {
+    padding-left: 10px;
+}
+
+#success_message {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+.profile-header-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img {
+    padding: 54px;
+}
+
+    .profile-header-img > img.img-circle {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #00BFFF;
+    }
+
+.profile-header {
+    margin-top: 43px;
+}
+
+/**
+ * Ranking component
+ */
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: #000;
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
+}
+
+#priorities .ourPriorityIcons {
+margin:0 auto;
+}
+
+#priorities .adjustPara p {
+margin:0;
+}
+
+.spacer {
+    margin-top: 40px; /* define margin as you see fit */
+}
+#priorities p {
+  font-size: 15px; 
+  font-weight:bold;
+}
+#priorities .para {
+  font-size: 14px; 
+  font-weight:normal;
+}
+
+/*read more*/
+
+#priorities a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+#priorities .morecontent span {
+	display: none;
+}
+#priorities a {
+	color: #6DB9DF
+}
+#priorities a:visited {
+	color: #6DB9DF
+}
+hr {
+    border-color:#6DB9DF;
+}
+
+.btn-transparent:hover, .btn-transparent:focus, .btn-transparent.focus, .btn-transparent:active, .btn-transparent.active, .open > .dropdown-toggle.btn-transparent {
+    background-color: #6DB9DF;
+    border: 2px solid #fff;
+}
+
+
+/*press release*/
+#dilsePressRelease img {
+width:100%;
+height:250px;
+}
+#mission {
+padding-top:60px;
+}
+#mission .container-fluid, #priorities .container-fluid {
+max-width:1400px;
+}
+
+#mission .groupImage {
+width: 100%;
+}
+
+.spacerTop{
+    display: inline-block;
+    margin-top: 20px;
+}
+.smallSpacer {
+margin-top:10px;
+}
+
+#mission hr.primary {
+    margin-left:0;    
+}
+#priorities {
+    color:#000;
+    padding-top:60px;
+}
+#mission, #priorities {    
+    padding-bottom:60px;
+}
+#divider {
+padding:0;
+margin-right:0;
+position: relative;
+}
+#divider img {
+width:100%;
+height:auto;
+background-repeat:no-repeat;
+background-size:100% auto;
+
+}
+.portfolio_description {
+    top:40%;    
+    left:15%;
+    position: absolute;
+    color: #fff;
+    display:block;
+}
+
+    #divider .portfolio_description h1 {    
+    font-family: "SEGOE UI LIGHT";
+    font-size: 54px;
+    font-weight:bold;
+    }
+
+    #divider .portfolio_description p {    
+    font-family: "SEGOE UI";    
+    font-size:18px;
+    }
+
+.btn-transparent {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 2px solid #fff;
+    border-radius:0;
+    padding:10px;
+    width:220px;    
+}
+#missionStatement {
+font-size:24px;
+padding-bottom:20px;
+}
+.lightBlue {
+color: #6DB9DF;
+}
+#ContributionType .checkbox {
+padding-bottom:10px;
+}
+#btnSendMail {
+color: #222;
+border: 2px solid #222;
+}
