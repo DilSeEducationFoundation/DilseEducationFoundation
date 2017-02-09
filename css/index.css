@@ -6,17 +6,6 @@
 	text-transform: none;
         font-family: "Segoe UI";
         font-weight: normal;
-	color:#000;
-	background-color: none;
-	padding:15px 10px;
-	border: 2px solid #b91141;
-	text-decoration: none;
-}
-
-#donate:hover{
-	text-transform: none;
-        font-family: "Segoe UI";
-        font-weight: normal;
 	color:#fff;
 	background-color: #b91141;
 	padding:15px 10px;
