@@ -2,6 +2,14 @@
     font-family: "Segoe UI";
 }
 
+#donate{
+	text-transform: none;
+        font-family: "Segoe UI";
+        font-weight: normal;
+	background-color: #b91141;
+	padding:20px 10px;
+}
+
     #page-top .semiLight {
         text-transform: none;
         font-family: "Segoe UI";
