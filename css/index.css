@@ -1,7 +1,16 @@
 ﻿#page-top, #page-top h2 {
     font-family: "Segoe UI";
 }
-
+#donate {		
+	text-transform: none;		
+    font-family: "Segoe UI";		
+    font-weight: normal;		
+	color:#fff;		
+	background-color: #b91141;		
+	padding:15px 10px;		
+	border: 2px solid #fff;		
+	text-decoration: none;		
+}
     #page-top .semiLight {
         text-transform: none;
         font-family: "Segoe UI";

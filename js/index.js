@@ -8,7 +8,7 @@ var sendMail = function () {
     $("input:checkbox[name=type]:checked").each(function(){
         contributionType.push($(this).val());
     });
-    var link = 'mailto:info@dilseeducationfoundation.org?subject=Dilse Foundation: association request'
+    var link = 'mailto:support@dilseeducationfoundation.org?subject=Dilse Foundation: association request'
                    + '&body=First Name: ' + $("input[name='first_name']").val()
                    + '%0ALast Name: ' + $("input[name='last_name']").val()
                    + '%0AEmail: ' + $("input[name='email']").val()
