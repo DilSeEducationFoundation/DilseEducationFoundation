@@ -231,7 +231,6 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
-  opacity: 0;
   display: block;
   background: rgba(109,185,223, 0.9);
   position: absolute;
