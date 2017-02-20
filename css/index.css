@@ -28,7 +28,7 @@
     }
 
 #mainNav.navbar-default.affix {
-    background-color: #222;
+    background-color: #222 !important;
 }
 
 #page-top #mainNav.navbar-default .nav > li > a:hover, #page-top #mainNav.navbar-default .nav > li > a:focus:hover, #page-top #mainNav.navbar-default.affix .nav > li > a:focus, #page-top #mainNav.navbar-default .nav > li.active > a, #page-top #mainNav.navbar-default .nav > li.active > a:focus, #page-top #mainNav.navbar-default.affix .nav > li > a:hover, #page-top #mainNav.navbar-default.affix .nav > li > a:focus:hover {
