@@ -37,6 +37,15 @@
 
 <body id="page-top">
 
+   <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,14 +53,43 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a id="logolink" class="navbar-brand scroll-top" href="index.html">
+                <a id="logolink" class="navbar-brand scroll-top" href="#">
                     <img class="img-responsive" id="logoImg" src="img/logo.png" alt="Dil Se Education | Help Educate a Poor Child" />
+                    <!--<span id="logoImg">Dil Se Education</span>-->
                 </a>
             </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right smallSpacer">
+                    <!--<li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>-->
+                    <li>
+                        <a class="page-scroll" href="#mission">Mission and Vision</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#priorities">Priorities</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#ourteam">Leadership Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Contributions</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="pressrelease.html">Media Center</a>
+                    </li>
+
+                </ul>
+            </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
+
     </nav>
 
     <header id="pressHeader">
