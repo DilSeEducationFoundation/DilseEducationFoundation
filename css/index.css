@@ -218,6 +218,9 @@ hr {
     width: 100%;
     height: 250px;
 }
+#dilsePressRelease div {
+   padding:15px;
+}
 
 #mission {
     padding-top: 60px;
