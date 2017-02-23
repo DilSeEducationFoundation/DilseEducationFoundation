@@ -5,7 +5,9 @@ $(document).ready(function () {
     renderImages_Contribution(1);
     renderImages_Contribution(2);
     renderImages_Contribution(3);
-    renderImages1(); 
+    renderImages_Events1();
+    renderImages_Events2();
+    renderImages_Events2();
     
 });
 var sendMail = function () {
@@ -116,7 +118,7 @@ renderImages_Contribution = function (columnNumber) {
 
 },
 
-renderImages1 = function () {
+renderImages_Events1 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 150; iCount <lines.length-1; iCount++) {
@@ -136,6 +138,64 @@ renderImages1 = function () {
             + '</div>';
             
             $("#dilseGallery4").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+        }
+        $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
+            $('#portfolio .img-responsive').lazyload({
+            });
+        });
+    });
+
+},
+    
+renderImages_Events2 = function () {
+    $.get('img/ImageList.txt', function (data) {
+        var lines = data.split('\n');
+        for (var iCount = 150; iCount <lines.length-1; iCount++) {
+            var item = 'img/DilSePhotoshoot/' + lines[iCount];
+            var portfolioGallery = '<div class="col-lg-2 col-sm-6">'
+                + '<a href="{0}" class="portfolio-box">'
+                   + '<img src="{1}" class="img-responsive" alt="">'
+                   + '<div class="portfolio-box-caption">'
+                     + '<div class="portfolio-box-caption-content">'
+                           + '<div class="project-category text-faded">'
+                           + '</div>'
+                           + ' <div class="project-name">'
+                           + '</div>'
+                        + '</div>'
+                   + '</div>'
+               + ' </a>'
+            + '</div>';
+            
+            $("#dilseGallery5").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+        }
+        $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
+            $('#portfolio .img-responsive').lazyload({
+            });
+        });
+    });
+
+},
+
+renderImages_Events3 = function () {
+    $.get('img/ImageList.txt', function (data) {
+        var lines = data.split('\n');
+        for (var iCount = 150; iCount <lines.length-1; iCount++) {
+            var item = 'img/DilSePhotoshoot/' + lines[iCount];
+            var portfolioGallery = '<div class="col-lg-2 col-sm-6">'
+                + '<a href="{0}" class="portfolio-box">'
+                   + '<img src="{1}" class="img-responsive" alt="">'
+                   + '<div class="portfolio-box-caption">'
+                     + '<div class="portfolio-box-caption-content">'
+                           + '<div class="project-category text-faded">'
+                           + '</div>'
+                           + ' <div class="project-name">'
+                           + '</div>'
+                        + '</div>'
+                   + '</div>'
+               + ' </a>'
+            + '</div>';
+            
+            $("#dilseGallery6").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
