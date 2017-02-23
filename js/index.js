@@ -4,6 +4,7 @@ $(document).ready(function () {
     configureRenderMoreText();
     renderImages1();
     renderImages2();
+    renderImages3();
 });
 var sendMail = function () {
     var contributionType = [];
