@@ -47,7 +47,7 @@ renderImages = function () {
 
 },
 
-renderImages = function () {
+renderImages1 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
