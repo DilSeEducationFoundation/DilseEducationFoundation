@@ -1,15 +1,10 @@
 ﻿"use strict";
 $(document).ready(function () {
     renderImages();    
-    //int i;
     configureRenderMoreText();
     renderImages_Contribution(1);
     renderImages_Contribution(2);
     renderImages_Contribution(3);
-    //for(i=1;i<=3;i++)
-    //{        
-    // renderImages_Contribution(i);
-   // }
     
 });
 var sendMail = function () {
@@ -81,7 +76,7 @@ renderImages_Contribution = function (columnNumber) {
         
         for (var iCount = initial; iCount <max; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
-            var portfolioGallery = '<div class="col-lg-4 col-sm-6">'
+            var portfolioGallery = '<div class="col-lg-2 col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
                    + '<img src="{1}" class="img-responsive" alt="">'
                    + '<div class="portfolio-box-caption">'
