@@ -340,7 +340,10 @@ hr {
     width: 60%;
     margin: 0 auto;
 }
-#container-fluid1 div{
-	float:left;
-	margin-right=200px;
+
+#imagegallery {
+	display: inline-flex;
+}
+.imagegallery-cols div{
+	width: 32%;
 }
