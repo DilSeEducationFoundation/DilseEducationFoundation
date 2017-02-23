@@ -7,7 +7,7 @@ $(document).ready(function () {
     renderImages_Contribution(3);
     renderImages_Events1();
     renderImages_Events2();
-    renderImages_Events2();
+    renderImages_Events3();
     
 });
 var sendMail = function () {
