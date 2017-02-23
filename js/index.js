@@ -2,9 +2,12 @@
 $(document).ready(function () {
     renderImages();
     configureRenderMoreText();
-    renderImages1();
-    renderImages2();
-    renderImages3();
+     renderImages(1);
+     renderImages(2);
+     renderImages(3);
+    //renderImages1();
+   // renderImages2();
+   // renderImages3();
 });
 var sendMail = function () {
     var contributionType = [];
@@ -50,6 +53,34 @@ renderImages = function () {
 
 },
 
+    renderImages = function (columnNumber) {
+    $.get('img/ImageList.txt', function (data) {
+        var lines = data.split('\n');
+        for (var iCount = 0; iCount <lines.length-142; iCount++) {
+            var item = 'img/DilSePhotoshoot/' + lines[iCount];
+            var portfolioGallery = '<div class="col-sm-4 pull-left">'
+                + '<a href="{0}" class="portfolio-box">'
+                   + '<img src="{1}" class="img-responsive" alt="">'
+                   + '<div class="portfolio-box-caption">'
+                     + '<div class="portfolio-box-caption-content">'
+                           + '<div class="project-category text-faded">'
+                           + '</div>'
+                           + ' <div class="project-name">'
+                           + '</div>'
+                        + '</div>'
+                   + '</div>'
+               + ' </a>'
+            + '</div>';
+            $("#dilseGallery" +columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+        }
+        $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
+            $('#portfolio .img-responsive').lazyload({
+            });
+        });
+    });
+
+},
+    
 renderImages1 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
