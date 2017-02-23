@@ -28,7 +28,7 @@ var sendMail = function () {
     window.location.href = link;
 
 },
-renderImages = function (columnNumber) {
+renderImages = function (var columnNumber) {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
