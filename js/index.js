@@ -1,8 +1,8 @@
 ﻿"use strict";
 $(document).ready(function () {
-    renderImages(0);
+    //renderImages(0);
     configureRenderMoreText();
-    for(int i=1;i<=3;i++)
+    for(int i=0;i<=3;i++)
     {        
      renderImages(i);
     }
@@ -24,7 +24,7 @@ var sendMail = function () {
     window.location.href = link;
 
 },
-renderImages = function () {
+renderImages = function (columnNumber) {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
