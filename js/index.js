@@ -54,7 +54,7 @@ renderImages1 = function () {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-142; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
-            var portfolioGallery = '<div class="col-lg-6 pull-left">'
+            var portfolioGallery = '<div class="col-lg-6 col-sm-6 pull-left">'
                 + '<a href="{0}" class="portfolio-box">'
                    + '<img src="{1}" class="img-responsive" alt="">'
                    + '<div class="portfolio-box-caption">'
