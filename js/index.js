@@ -1,7 +1,7 @@
 ﻿"use strict";
 $(document).ready(function () {
     renderImages();    
-    //int i;
+    int i;
     configureRenderMoreText();
     //renderImages(1);
     //renderImages(2);
