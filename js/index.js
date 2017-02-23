@@ -1,15 +1,15 @@
 ﻿"use strict";
 $(document).ready(function () {
     renderImages();    
-    int i;
+    //int i;
     configureRenderMoreText();
-    //renderImages(1);
-    //renderImages(2);
-    //renderImages(3);
-    for(i=1;i<=3;i++)
-    {        
-     renderImages_Contribution(i);
-    }
+    renderImages_Contribution(1);
+    renderImages_Contribution(2);
+    renderImages_Contribution(3);
+    //for(i=1;i<=3;i++)
+    //{        
+    // renderImages_Contribution(i);
+   // }
     
 });
 var sendMail = function () {
@@ -57,7 +57,7 @@ renderImages = function () {
 
 },
     
-    renderImages_Contribution = function (columnNumber) {
+renderImages_Contribution = function (columnNumber) {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         var col1 = 30;
