@@ -68,7 +68,7 @@ renderImages1 = function () {
             $("#dilseGallery1").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
-            $('#portfolio1 .img-responsive').lazyload({
+            $('#portfolio .img-responsive').lazyload({
             });
         });
     });
