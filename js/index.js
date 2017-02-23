@@ -24,7 +24,7 @@ var sendMail = function () {
     window.location.href = link;
 
 },
-renderImages = function (columnNumber) {
+renderImages = function (var columnNumber) {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
@@ -46,7 +46,7 @@ renderImages = function (columnNumber) {
             {
                 columnNumber = "";
             }
-            $("#dilseGallery" +columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+            $("#dilseGallery"+columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
