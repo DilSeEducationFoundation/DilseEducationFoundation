@@ -61,7 +61,7 @@ renderImages_Contribution = function (columnNumber) {
         var max;
         var initial;
         var gridFlag = 1;
-        var portfolioGalleryDiv = "<div id="gallerydiv"> </div>
+       // var portfolioGalleryDiv = "<div id="gallerydiv"> </div>;
         
         if(columnNumber === 1){
             initial =0;
