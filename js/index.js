@@ -1,15 +1,15 @@
 ﻿"use strict";
 $(document).ready(function () {
-    renderImages(0);    
+    renderImages();    
     //int i;
     configureRenderMoreText();
-    renderImages(1);
-    renderImages(2);
-    renderImages(3);
-    //for(i=0;i<=3;i++)
-    //{        
-    // renderImages(i);
-    //}
+    //renderImages(1);
+    //renderImages(2);
+    //renderImages(3);
+    for(i=1;i<=3;i++)
+    {        
+     renderImages_Contribution(i);
+    }
     
 });
 var sendMail = function () {
@@ -28,10 +28,58 @@ var sendMail = function () {
     window.location.href = link;
 
 },
-renderImages = function (var columnNumber) {
+renderImages = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
+            var item = 'img/DilSePhotoshoot/' + lines[iCount];
+            var portfolioGallery = '<div class="col-lg-2 col-sm-6">'
+                + '<a href="{0}" class="portfolio-box">'
+                   + '<img src="{1}" class="img-responsive" alt="">'
+                   + '<div class="portfolio-box-caption">'
+                     + '<div class="portfolio-box-caption-content">'
+                           + '<div class="project-category text-faded">'
+                           + '</div>'
+                           + ' <div class="project-name">'
+                           + '</div>'
+                        + '</div>'
+                   + '</div>'
+               + ' </a>'
+            + '</div>';
+            
+            $("#dilseGallery").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+        }
+        $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
+            $('#portfolio .img-responsive').lazyload({
+            });
+        });
+    });
+
+},
+    
+    renderImages_Contribution = function (columnNumber) {
+    $.get('img/ImageList.txt', function (data) {
+        var lines = data.split('\n');
+        var col1 = 30;
+        var col2 = 100;
+        var col3 = 172;
+        var max;
+        var initial;
+        
+        if(columnNumber === 1){
+            initial =0;
+            max = col1;
+        }
+        else if(columnNumber === 2){
+            initial = col1 +1;
+            max = col2;
+        }
+        else if(columnNumber === 3){
+            initial = col2 +1;
+            max = col3;
+        }
+        
+        for (var iCount = initial; iCount <max; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-lg-2 col-sm-6">'
                 + '<a href="{0}" class="portfolio-box">'
