@@ -5,6 +5,7 @@ $(document).ready(function () {
     renderImages_Contribution(1);
     renderImages_Contribution(2);
     renderImages_Contribution(3);
+    renderImages_Contribution(4);
     
 });
 var sendMail = function () {
@@ -56,8 +57,9 @@ renderImages_Contribution = function (columnNumber) {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         var col1 = 30;
-        var col2 = 100;
-        var col3 = 172;
+        var col2 = 80;
+        var col3 = 120;
+        var col4 = 172;
         var max;
         var initial;
         var gridFlag = 1;
@@ -75,7 +77,11 @@ renderImages_Contribution = function (columnNumber) {
             initial = col2 +1;
             max = col3;
         }
-        
+        else if(columnNumber === 4)
+        {
+            initial = col3 +1;
+            max = col4;
+        }
         for (var iCount = initial; iCount <max; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
