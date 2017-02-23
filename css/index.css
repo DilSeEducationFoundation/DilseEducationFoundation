@@ -344,6 +344,6 @@ hr {
 .imagegallery {
 	display: inline-flex;
 }
-.imagegallery-cols div{
-	width: 32%;
+.imagegallery-cols{
+	width: 33%;
 }
