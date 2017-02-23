@@ -341,5 +341,6 @@ hr {
     margin: 0 auto;
 }
 #container-fluid1 div{
+	float:left;
 	margin-right=200px;
 }
