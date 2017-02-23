@@ -119,7 +119,7 @@ renderImages_Contribution = function (columnNumber) {
 renderImages1 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
-        for (var iCount = 100; iCount <lines.length-1; iCount++) {
+        for (var iCount = 150; iCount <lines.length-1; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-lg-2 col-sm-6">'
                 + '<a href="{0}" class="portfolio-box">'
