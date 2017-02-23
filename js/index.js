@@ -5,7 +5,7 @@ $(document).ready(function () {
     renderImages_Contribution(1);
     renderImages_Contribution(2);
     renderImages_Contribution(3);
-    renderImages_Contribution(4);
+    renderImages1(); 
     
 });
 var sendMail = function () {
@@ -58,8 +58,7 @@ renderImages_Contribution = function (columnNumber) {
         var lines = data.split('\n');
         var col1 = 30;
         var col2 = 80;
-        var col3 = 120;
-        var col4 = 172;
+        var col3 = 172;
         var max;
         var initial;
         var gridFlag = 1;
@@ -77,11 +76,7 @@ renderImages_Contribution = function (columnNumber) {
             initial = col2 +1;
             max = col3;
         }
-        else if(columnNumber === 4)
-        {
-            initial = col3 +1;
-            max = col4;
-        }
+       
         for (var iCount = initial; iCount <max; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
@@ -112,6 +107,35 @@ renderImages_Contribution = function (columnNumber) {
             }
             $("#dilseGallery"+columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
             
+        }
+        $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
+            $('#portfolio .img-responsive').lazyload({
+            });
+        });
+    });
+
+},
+
+renderImages1 = function () {
+    $.get('img/ImageList.txt', function (data) {
+        var lines = data.split('\n');
+        for (var iCount = 100; iCount <lines.length-1; iCount++) {
+            var item = 'img/DilSePhotoshoot/' + lines[iCount];
+            var portfolioGallery = '<div class="col-lg-2 col-sm-6">'
+                + '<a href="{0}" class="portfolio-box">'
+                   + '<img src="{1}" class="img-responsive" alt="">'
+                   + '<div class="portfolio-box-caption">'
+                     + '<div class="portfolio-box-caption-content">'
+                           + '<div class="project-category text-faded">'
+                           + '</div>'
+                           + ' <div class="project-name">'
+                           + '</div>'
+                        + '</div>'
+                   + '</div>'
+               + ' </a>'
+            + '</div>';
+            
+            $("#dilseGallery4").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
