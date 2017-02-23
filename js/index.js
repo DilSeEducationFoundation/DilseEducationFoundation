@@ -52,7 +52,7 @@ renderImages = function () {
 renderImages1 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
-        for (var iCount = 0; iCount <lines.length-1; iCount++) {
+        for (var iCount = 0; iCount <lines.length-100; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-lg-2 col-sm-3">'
                 + '<a href="{0}" class="portfolio-box">'
