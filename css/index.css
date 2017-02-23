@@ -341,7 +341,7 @@ hr {
     margin: 0 auto;
 }
 
-#imagegallery {
+.imagegallery {
 	display: inline-flex;
 }
 .imagegallery-cols div{
