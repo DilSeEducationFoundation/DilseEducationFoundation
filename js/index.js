@@ -60,6 +60,8 @@ renderImages_Contribution = function (columnNumber) {
         var col3 = 172;
         var max;
         var initial;
+        var gridFlag = 1;
+        var portfolioGalleryDiv = "<div id="gallerydiv"> </div>
         
         if(columnNumber === 1){
             initial =0;
@@ -89,11 +91,21 @@ renderImages_Contribution = function (columnNumber) {
                    + '</div>'
                + ' </a>'
             + '</div>';
+            
+            //gridFlag +=1;
+            //if(gridFlag%9 === 0){
+                //gridFlag = 1;
+                //$("#dilseGallery"+columnNumber).append(portfolioGalleryDiv);
+                //portfolioGalleryDiv = "<div class='portfolioGal'> portfolioGallery.replace("{0}", item).replace("{1}", item) </div>";
+            //}
+            
+            //$("#gallerydiv").append(portfolioGallery.replace("{0}", item).replace("{1}", item));            
             if(columnNumber === 0)
             {
                 columnNumber = "";
             }
             $("#dilseGallery"+columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+            
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
