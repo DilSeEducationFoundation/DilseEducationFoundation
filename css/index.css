@@ -352,3 +352,7 @@ hr {
 	height: 300px;
 	overflow: auto;
 }
+#volunteers div
+{
+	width: 50%;
+}
