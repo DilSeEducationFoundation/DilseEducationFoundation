@@ -1,8 +1,9 @@
 ﻿"use strict";
 $(document).ready(function () {
     //renderImages(0);
+    int i;
     configureRenderMoreText();
-    for(int i=0;i<=3;i++)
+    for(i=0;i<=3;i++)
     {        
      renderImages(i);
     }
