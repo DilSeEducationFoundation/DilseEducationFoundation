@@ -2,6 +2,7 @@
 $(document).ready(function () {
     renderImages();
     configureRenderMoreText();
+    renderImages1();
 });
 var sendMail = function () {
     var contributionType = [];
