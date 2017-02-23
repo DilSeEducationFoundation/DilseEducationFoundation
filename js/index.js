@@ -76,7 +76,7 @@ renderImages_Contribution = function (columnNumber) {
         
         for (var iCount = initial; iCount <max; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
-            var portfolioGallery = '<div class="col-lg-2 col-sm-4">'
+            var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
                    + '<img src="{1}" class="img-responsive" alt="">'
                    + '<div class="portfolio-box-caption">'
