@@ -1,12 +1,15 @@
 ﻿"use strict";
 $(document).ready(function () {
-    //renderImages(0);
-    int i;
+    renderImages(0);    
+    //int i;
     configureRenderMoreText();
-    for(i=0;i<=3;i++)
-    {        
-     renderImages(i);
-    }
+    renderImages(1);
+    renderImages(2);
+    renderImages(3);
+    //for(i=0;i<=3;i++)
+    //{        
+    // renderImages(i);
+    //}
     
 });
 var sendMail = function () {
