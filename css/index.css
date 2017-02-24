@@ -385,3 +385,7 @@ hr {
       display: inline-block;
       margin: auto;
   }
+
+.carousel-inner col-sm-4{
+	padding: 0;
+}
