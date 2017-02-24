@@ -235,7 +235,7 @@ renderImages_After = function () {
     
 
 renderImages_Events1 = function () {
-    $.get('img/Republic.txt', function (data) {
+    $.get('img/Learning.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 50; iCount <lines.length-1; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
