@@ -372,20 +372,20 @@ hr {
 	height: 200px;
 }
 
- .carousel-inner > .galleryitem > div > img{
-    //width: 40%;
-      //height: 20%;
+ .carousel-inner > .item > div > img{
+      width: 40%;
+      height: 20%;
       display: inline-table;
       margin: auto;
   }
   
-  .carousel-inner > .galleryitem > div > a > img {
-      //width: 50%;
-      //height: 50%;
+  .carousel-inner > .item > div > a > img {
+      width: 50%;
+      height: 50%;
       display: inline-block;
       margin: auto;
   }
 
-.item > col-sm-4{
+ .carousel-inner > .item > col-sm-4{
 	padding: 0 !important;
 }
