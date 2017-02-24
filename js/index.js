@@ -48,6 +48,9 @@ renderImages_Contribution = function (columnNumber) {
             max = col3;
         }
        
+        var carouselHTMLChunk = '<div id="myCarousel'+columnNumber+'"class="carousel slide" data-ride="carousel">'+
+                                '<div id=innerCarousel'+columnNumber+'"class="carousel-inner" role="listbox"></div></div>';
+        
         for (var iCount = 0; iCount <max; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
@@ -74,7 +77,7 @@ renderImages_Contribution = function (columnNumber) {
            if(limit === 9){
                 limit = 0;
                 slideHTML = slideHTML + '</div>';
-                $("#dilseGallery"+columnNumber).append(slideHTML);
+                $("#innerCarousel"+columnNumber).append(slideHTML);
                 slideHTML = '<div class="galleryitem">';
                 
             }
@@ -83,9 +86,12 @@ renderImages_Contribution = function (columnNumber) {
             slideHTML = slideHTML + portfolioGallery.replace("{0}", item).replace("{1}", item);  
             if(iCount === max-1){
                 slideHTML = slideHTML + '</div>';
-                $("#dilseGallery"+columnNumber).append(slideHTML);
+                $("#innerCarousel"+columnNumber).append(slideHTML);
             }           
         }
+        
+         $("#dilseGallery"+columnNumber).append(slideHTML);
+        
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
             });
