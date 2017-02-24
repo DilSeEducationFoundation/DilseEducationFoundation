@@ -17,13 +17,13 @@ $(document).ready(function () {
     
 });
 
-$('.carousel .carousel-control').click(function(event) {
+/*$('.carousel .carousel-control').click(function(event) {
               if (event.stopPropagation) {    // standard
                    event.stopPropagation();
                } else {    // IE6-8
                     event.cancelBubble = true;
                }
-          });
+          });*/
 
 var sendMail = function () {
     var contributionType = [];
@@ -63,10 +63,10 @@ renderImages_Contribution = function (columnNumber, imageURL) {
        
         var carouselHTMLChunk = '<div id="myCarousel' + columnNumber +'" class="carousel slide" data-ride="carousel">'+
                                 '<ol class="carousel-indicators"> {1}</ol>' +                                
-                                '<div id="innerCarousel' + columnNumber +'" class="carousel-inner" role="listbox"></div>' + 
-            //'<a class="left carousel-control" href="#myCarousel' + columnNumber +'" role="button" data-slide="prev">      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>' + 
-            //'<a class="right carousel-control" href="#myCarousel' + columnNumber +'" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>' +
-            '</div>';
+                                '<div id="innerCarousel' + columnNumber +'" class="carousel-inner" role="listbox"></div></div>'; 
+            /*'<a class="left carousel-control" href="#myCarousel' + columnNumber +'" role="button" data-slide="prev">      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>' + 
+            '<a class="right carousel-control" href="#myCarousel' + columnNumber +'" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>' +
+            '</div>'; */
         
         var navCount = max%9 === 0 ? max/9 : max/9 + 1 ; 
         navCount = parseInt(navCount,10);
