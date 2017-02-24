@@ -355,10 +355,7 @@ hr {
 	width: 50%;
 }
 
-#dilseGallery1, #dilseGallery2, #dilseGallery3, #dilseGallery4, #dilseGallery5, #dilseGallery6, #dilseGallerySlider{
-	height: 300px;
-	overflow: auto;
-}
+
 #volunteers
 {
 	height: 100px;
@@ -372,7 +369,13 @@ hr {
 	height: 200px;
 }
 
- /*.carousel-inner > .item > div > img{
+ /*
+#dilseGallery1, #dilseGallery2, #dilseGallery3, #dilseGallery4, #dilseGallery5, #dilseGallery6, #dilseGallerySlider{
+	height: 300px;
+	overflow: auto;
+}
+
+.carousel-inner > .item > div > img{
       width: 40%;
       height: 20%;
       display: inline-table;
