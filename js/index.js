@@ -30,17 +30,10 @@ var sendMail = function () {
 
 renderImages_Contribution = function (columnNumber) {
     $.get('img/ImageList_Before.txt', function (data) {
-        var lines = data.split('\n');
-       // var col1 = 30;
-      //  var col2 = 80;
-       // var col3 = 172;
-        var max = lines.length-1;
-        var initial;
-        var gridFlag = 1;
+        var lines = data.split('\n');      
+        var max = lines.length-1;       
         var limit = 0;
-        var slideHTML = '<div>';
-        
-       // var portfolioGalleryDiv = "<div id="gallerydiv"> </div>;
+        var slideHTML = '<div class="galleryitem">';
         
         if(columnNumber === 1){
             initial =0;
@@ -71,14 +64,7 @@ renderImages_Contribution = function (columnNumber) {
                + ' </a>'
             + '</div>';
             
-            //gridFlag +=1;
-            //if(gridFlag%9 === 0){
-                //gridFlag = 1;
-                //$("#dilseGallery"+columnNumber).append(portfolioGalleryDiv);
-                //portfolioGalleryDiv = "<div class='portfolioGal'> portfolioGallery.replace("{0}", item).replace("{1}", item) </div>";
-            //}
-            
-            //$("#gallerydiv").append(portfolioGallery.replace("{0}", item).replace("{1}", item));            
+                     
             if(columnNumber === 0)
             {
                 columnNumber = "";
@@ -92,16 +78,13 @@ renderImages_Contribution = function (columnNumber) {
                 slideHTML = '<div>';
                 
             }
+            
             limit = limit + 1;
             slideHTML = slideHTML + portfolioGallery.replace("{0}", item).replace("{1}", item);  
             if(iCount === max-1){
                 slideHTML = slideHTML + '</div>';
                 $("#dilseGallery"+columnNumber).append(slideHTML);
-            }
-            
-           // $("#dilseGallery"+columnNumber).append(slideHTML);
-            //$("#dilseGallery"+columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
-            
+            }           
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
