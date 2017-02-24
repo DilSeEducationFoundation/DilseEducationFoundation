@@ -2,6 +2,7 @@
 $(document).ready(function () {
     renderImages();    
     configureRenderMoreText();
+    renderImages_Contribution("Slider");
     renderImages_Before();
     renderImages_Transition();
     renderImages_After();
