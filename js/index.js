@@ -55,7 +55,7 @@ renderImages_Contribution = function (columnNumber) {
         navCount = parseInt(navCount,10);
         var listData = '<li data-target="#myCarousel' + columnNumber + '" ></li></ol>';
         for(var value = 0; value < navCount; value++ ){
-            if(navCount === 0){
+            if(value === 0){
                 listData = '<li data-target="#myCarousel' + columnNumber + '" class="active"></li></ol>';
             } else {
                 listData = listData + '<li data-target="#myCarousel' + columnNumber + '" ></li></ol>';
