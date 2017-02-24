@@ -49,7 +49,7 @@ renderImages_Contribution = function (columnNumber) {
         }
        
         var carouselHTMLChunk = '<div id="myCarousel" class="carousel slide" data-ride="carousel">'+
-                                '<div id=innerCarousel" class="carousel-inner" role="listbox"></div></div>';
+                                '<div id="innerCarousel" class="carousel-inner" role="listbox"></div></div>';
         
          $("#dilseGallery"+columnNumber).append(carouselHTMLChunk);
         
