@@ -75,7 +75,7 @@ renderImages_Contribution = function (columnNumber) {
                 limit = 0;
                 slideHTML = slideHTML + '</div>';
                 $("#dilseGallery"+columnNumber).append(slideHTML);
-                slideHTML = '<div>';
+                slideHTML = '<div class="galleryitem">';
                 
             }
             
