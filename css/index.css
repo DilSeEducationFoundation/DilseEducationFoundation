@@ -392,3 +392,7 @@ hr {
  .carousel-inner > .item > .col-sm-4{
 	padding: 0 !important;
 }
+
+.carousel-inner > .item > div > a > img {
+	height: 111px !important;
+}
