@@ -6,8 +6,8 @@ $(document).ready(function () {
     renderImages_Contribution("2", "img/ImageList_Transition.txt");
     renderImages_Contribution("3", "img/ImageList_After.txt");
     renderImages_Contribution("4", "img/Learning.txt");
-    renderImages_Contribution("5", "img/Republic.txt");
-    renderImages_Contribution("6", "img/ImageList.txt");
+    renderImages_Contribution("5", "img/ImageList_Republic.txt");
+    renderImages_Contribution("6", "img/ImageList_Independence.txt");
     renderImages(); 
     //renderImages_Before();
     //renderImages_Transition();
