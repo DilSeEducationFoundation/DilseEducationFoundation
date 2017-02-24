@@ -1,6 +1,6 @@
 ﻿"use strict";
 $(document).ready(function () {
-    renderImages();    
+    //renderImages();    
     configureRenderMoreText();
     renderImages_Contribution("1", "img/ImageList_Before.txt");
     renderImages_Contribution("2", "img/ImageList_Transition.txt");
