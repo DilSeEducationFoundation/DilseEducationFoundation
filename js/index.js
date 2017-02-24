@@ -26,6 +26,90 @@ var sendMail = function () {
     window.location.href = link;
 
 },
+
+renderImages_Contribution = function (columnNumber) {
+    $.get('img/ImageList.txt', function (data) {
+        var lines = data.split('\n');
+        var col1 = 30;
+        var col2 = 80;
+        var col3 = 172;
+        var max;
+        var initial;
+        var gridFlag = 1;
+        var limit = 0;
+        var slideHTML = '<div>';
+        
+       // var portfolioGalleryDiv = "<div id="gallerydiv"> </div>;
+        
+        if(columnNumber === 1){
+            initial =0;
+            max = col1;
+        }
+        else if(columnNumber === 2){
+            initial = col1 +1;
+            max = col2;
+        }
+        else if(columnNumber === 3){
+            initial = col2 +1;
+            max = col3;
+        }
+       
+        for (var iCount = initial; iCount <max; iCount++) {
+            var item = 'img/DilSePhotoshoot/' + lines[iCount];
+            var portfolioGallery = '<div class="col-sm-4">'
+                + '<a href="{0}" class="portfolio-box">'
+                   + '<img src="{1}" class="img-responsive" alt="">'
+                   + '<div class="portfolio-box-caption">'
+                     + '<div class="portfolio-box-caption-content">'
+                           + '<div class="project-category text-faded">'
+                           + '</div>'
+                           + ' <div class="project-name">'
+                           + '</div>'
+                        + '</div>'
+                   + '</div>'
+               + ' </a>'
+            + '</div>';
+            
+            //gridFlag +=1;
+            //if(gridFlag%9 === 0){
+                //gridFlag = 1;
+                //$("#dilseGallery"+columnNumber).append(portfolioGalleryDiv);
+                //portfolioGalleryDiv = "<div class='portfolioGal'> portfolioGallery.replace("{0}", item).replace("{1}", item) </div>";
+            //}
+            
+            //$("#gallerydiv").append(portfolioGallery.replace("{0}", item).replace("{1}", item));            
+            if(columnNumber === 0)
+            {
+                columnNumber = "";
+            }
+            
+            
+           if(limit === 9){
+                limit = 0;
+                slideHTML = slideHTML + '</div>';
+                $("#dilseGallery"+columnNumber).append(slideHTML);
+                slideHTML = '<div>';
+                
+            }
+            limit = limit + 1;
+            slideHTML = slideHTML + portfolioGallery.replace("{0}", item).replace("{1}", item);  
+            if(iCount === max){
+                slideHTML = slideHTML + '</div>';
+            }
+            
+           // $("#dilseGallery"+columnNumber).append(slideHTML);
+            //$("#dilseGallery"+columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+            
+        }
+        $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
+            $('#portfolio .img-responsive').lazyload({
+            });
+        });
+    });
+
+},
+
+
 renderImages = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
