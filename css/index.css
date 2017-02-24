@@ -386,6 +386,6 @@ hr {
       margin: auto;
   }
 
-.carousel-inner > col-sm-4{
+.item > col-sm-4{
 	padding: 0 !important;
 }
