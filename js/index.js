@@ -2,10 +2,12 @@
 $(document).ready(function () {
     renderImages();    
     configureRenderMoreText();
-    renderImages_Contribution("Slider");
-    renderImages_Before();
-    renderImages_Transition();
-    renderImages_After();
+    renderImages_Contribution("1", "img/ImageList_Before.txt");
+    renderImages_Contribution("2", "img/ImageList_Transition.txt");
+    renderImages_Contribution("3", "img/ImageList_After.txt");
+    //renderImages_Before();
+    //renderImages_Transition();
+    //renderImages_After();
     renderImages_Events1();
     renderImages_Events2();
     renderImages_Events3();
@@ -28,8 +30,8 @@ var sendMail = function () {
 
 },
 
-renderImages_Contribution = function (columnNumber) {
-    $.get('img/ImageList_Before.txt', function (data) {
+renderImages_Contribution = function (columnNumber, imageURL) {
+    $.get(imageURL, function (data) {
         var lines = data.split('\n');      
         var max = lines.length-1;       
         var limit = 0;
@@ -237,7 +239,7 @@ renderImages_After = function () {
 renderImages_Events1 = function () {
     $.get('img/Learning.txt', function (data) {
         var lines = data.split('\n');
-        for (var iCount = 0; iCount <lines.length-1; iCount++) {
+        for (var iCount = 50; iCount <lines.length-1; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
