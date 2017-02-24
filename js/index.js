@@ -33,7 +33,7 @@ renderImages_Contribution = function (columnNumber) {
         var lines = data.split('\n');      
         var max = lines.length-1;       
         var limit = 0;
-        var slideHTML = '<div class="galleryitem item">';
+        var slideHTML = '<div class="item">';
         //var navigationDiv = '<div id={1} class="carousel slide" data-ride="carousel"> <ol class="carousel-indicators"> {2} </ol> <div class="carousel-inner" role="listbox"> {3} </div> </div>';
         //var list = '<li data-target="#"{1}  class="active"></li>';
         if(columnNumber === 1){
@@ -50,6 +50,10 @@ renderImages_Contribution = function (columnNumber) {
         }
        
         var carouselHTMLChunk = '<div id="myCarousel" class="carousel slide" data-ride="carousel">'+
+                                '<ol class="carousel-indicators">' + 
+                                '<li data-target="#myCarousel"  class="active"></li> '+
+                                '<li data-target="#myCarousel" ></li></ol>' +
+                                '<li data-target="#myCarousel" ></li></ol>' +
                                 '<div id="innerCarousel" class="carousel-inner" role="listbox"></div></div>';
         
          $("#dilseGallery"+columnNumber).append(carouselHTMLChunk);
@@ -81,10 +85,12 @@ renderImages_Contribution = function (columnNumber) {
                 limit = 0;
                 slideHTML = slideHTML + '</div>';
                 $("#innerCarousel").append(slideHTML);
-                slideHTML = '<div class="galleryitem item">';
+                slideHTML = '<div class="item">';
                 
             }
-            
+             if(iCount === 0){
+                slideHTML = '<div class="item active">';
+             }
             limit = limit + 1;
             slideHTML = slideHTML + portfolioGallery.replace("{0}", item).replace("{1}", item);  
             if(iCount === max-1){
@@ -224,7 +230,7 @@ renderImages_After = function () {
 renderImages_Events1 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
-        for (var iCount = 40; iCount <lines.length-1; iCount++) {
+        for (var iCount = 0; iCount <lines.length-1; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
@@ -282,7 +288,7 @@ renderImages_Events2 = function () {
 renderImages_Events3 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
-        for (var iCount = 52; iCount <lines.length-1; iCount++) {
+        for (var iCount = 0; iCount <lines.length-1; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
