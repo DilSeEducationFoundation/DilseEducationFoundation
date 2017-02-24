@@ -33,9 +33,7 @@ renderImages_Contribution = function (columnNumber) {
         var lines = data.split('\n');      
         var max = lines.length-1;       
         var limit = 0;
-        var slideHTML = '<div class="item">';
-        //var navigationDiv = '<div id={1} class="carousel slide" data-ride="carousel"> <ol class="carousel-indicators"> {2} </ol> <div class="carousel-inner" role="listbox"> {3} </div> </div>';
-        //var list = '<li data-target="#"{1}  class="active"></li>';
+        var slideHTML = '<div class="item">';        
         if(columnNumber === 1){
             initial =0;
             max = col1;
@@ -49,12 +47,15 @@ renderImages_Contribution = function (columnNumber) {
             max = col3;
         }
        
-        var carouselHTMLChunk = '<div id="myCarousel" class="carousel slide" data-ride="carousel">'+
+        var carouselHTMLChunk = '<div id="myCarousel' + columnNumber +'" class="carousel slide" data-ride="carousel">'+
                                 '<ol class="carousel-indicators">' + 
                                 '<li data-target="#myCarousel"  class="active"></li> '+
                                 '<li data-target="#myCarousel" ></li></ol>' +
                                 '<li data-target="#myCarousel" ></li></ol>' +
                                 '<div id="innerCarousel" class="carousel-inner" role="listbox"></div></div>';
+        var navCount = max%9 === 0 ? max/9 : max/9 + 1 ; 
+        
+        var listData = '<li data-target="#myCarousel" ></li></ol>';
         
          $("#dilseGallery"+columnNumber).append(carouselHTMLChunk);
         
