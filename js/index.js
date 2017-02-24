@@ -224,7 +224,7 @@ renderImages_After = function () {
 renderImages_Events1 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
-        for (var iCount = 70; iCount <lines.length-1; iCount++) {
+        for (var iCount = 40; iCount <lines.length-1; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
@@ -282,7 +282,7 @@ renderImages_Events2 = function () {
 renderImages_Events3 = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
-        for (var iCount = 90; iCount <lines.length-1; iCount++) {
+        for (var iCount = 52; iCount <lines.length-1; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
