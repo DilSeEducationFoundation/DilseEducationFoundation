@@ -49,7 +49,7 @@ renderImages_Contribution = function (columnNumber) {
        
         var carouselHTMLChunk = '<div id="myCarousel' + columnNumber +'" class="carousel slide" data-ride="carousel">'+
                                 '<ol class="carousel-indicators"> {1}</ol>' +                                
-                                '<div id="innerCarousel" class="carousel-inner" role="listbox"></div></div>';
+                                '<div id="innerCarousel' + columnNumber +'" class="carousel-inner" role="listbox"></div></div>';
         
         var navCount = max%9 === 0 ? max/9 : max/9 + 1 ; 
         navCount = parseInt(navCount,10);
@@ -102,7 +102,7 @@ renderImages_Contribution = function (columnNumber) {
             slideHTML = slideHTML + portfolioGallery.replace("{0}", item).replace("{1}", item);  
             if(iCount === max-1){
                 slideHTML = slideHTML + '</div>';
-                $("#innerCarousel").append(slideHTML);
+                $("#innerCarousel" + columnNumber).append(slideHTML);
             }           
         }
         
