@@ -35,7 +35,7 @@ renderImages_Contribution = function (columnNumber) {
       //  var col2 = 80;
        // var col3 = 172;
         var max = lines.length-1;
-        var initial;
+       // var initial;
         var gridFlag = 1;
         var limit = 0;
         var slideHTML = '<div>';
@@ -55,7 +55,7 @@ renderImages_Contribution = function (columnNumber) {
             max = col3;
         }
        
-        for (var iCount = initial; iCount <max; iCount++) {
+        for (var iCount = 0; iCount <max; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
