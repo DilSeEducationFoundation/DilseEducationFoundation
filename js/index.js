@@ -35,7 +35,7 @@ renderImages_Contribution = function (columnNumber) {
       //  var col2 = 80;
        // var col3 = 172;
         var max = lines.length-1;
-       // var initial;
+        var initial;
         var gridFlag = 1;
         var limit = 0;
         var slideHTML = '<div>';
