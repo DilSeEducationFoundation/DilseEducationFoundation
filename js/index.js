@@ -8,7 +8,8 @@ $(document).ready(function () {
     renderImages_Contribution("4", "img/Learning.txt");
     renderImages_Contribution("5", "img/ImageList_Republic.txt");
     renderImages_Contribution("6", "img/ImageList_Independence.txt");
-    renderImages(); 
+    renderImages();
+    renderImages_Press();
     //renderImages_Before();
     //renderImages_Transition();
     //renderImages_After();
@@ -164,11 +165,11 @@ renderImages = function () {
 
 },
 
-/*renderImages_Before = function () {
-    $.get('img/ImageList_Before.txt', function (data) {
+renderImages_Press = function () {
+    $.get('img/ImageList_Press.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
-            var item = 'img/DilSePhotoshoot/' + lines[iCount];
+            var item = 'img/Press/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
                    + '<img src="{1}" class="img-responsive" alt="">'
@@ -183,7 +184,7 @@ renderImages = function () {
                + ' </a>'
             + '</div>';
             
-            $("#dilseGallery1").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+            $("#dilseGallery9").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
@@ -193,7 +194,7 @@ renderImages = function () {
 
 },
 
-renderImages_Transition = function () {
+/*renderImages_Transition = function () {
     $.get('img/ImageList_Transition.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
