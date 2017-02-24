@@ -93,11 +93,11 @@ renderImages_Contribution = function (columnNumber, imageURL) {
            if(limit === 9){
                 limit = 0;
                 slideHTML = slideHTML + '</div>';
-                $("#innerCarousel").append(slideHTML);
+                $("#innerCarousel" + columnNumber).append(slideHTML);
                 slideHTML = '<div class="item">';
                 
             }
-             if(iCount === 0){
+             if(iCount == 0){
                 slideHTML = '<div class="item active">';
              }
             limit = limit + 1;
