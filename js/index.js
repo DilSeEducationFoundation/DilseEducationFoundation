@@ -33,8 +33,9 @@ renderImages_Contribution = function (columnNumber) {
         var lines = data.split('\n');      
         var max = lines.length-1;       
         var limit = 0;
-        var slideHTML = '<div class="galleryitem">';
-        
+        var slideHTML = '<div class="galleryitem item">';
+        var navigationDiv = '<div id={1} class="carousel slide" data-ride="carousel"> <ol class="carousel-indicators"> {2} </ol> <div class="carousel-inner" role="listbox"> {3} </div> </div>';
+        var list = '<li data-target="#"{1}  class="active"></li>';
         if(columnNumber === 1){
             initial =0;
             max = col1;
@@ -80,7 +81,7 @@ renderImages_Contribution = function (columnNumber) {
                 limit = 0;
                 slideHTML = slideHTML + '</div>';
                 $("#innerCarousel").append(slideHTML);
-                slideHTML = '<div class="galleryitem">';
+                slideHTML = '<div class="galleryitem item">';
                 
             }
             
