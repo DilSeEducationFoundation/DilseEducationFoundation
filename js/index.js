@@ -136,7 +136,7 @@ renderImages_Contribution = function (columnNumber, imageURL) {
 
 
 renderImages = function () {
-    $.get('img/ImageList.txt', function (data) {
+    $.get('img/ImageList_Collector.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
             var item = 'img/DilSePhotoshoot/' + lines[iCount];
