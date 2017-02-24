@@ -53,12 +53,12 @@ renderImages_Contribution = function (columnNumber) {
         
         var navCount = max%9 === 0 ? max/9 : max/9 + 1 ; 
         navCount = parseInt(navCount,10);
-        var listData = '<li data-target="#myCarousel' + columnNumber + '" ></li></ol>';
+        var listData = '<li data-target="#myCarousel' + columnNumber + '" ></li>';
         for(var value = 0; value < navCount; value++ ){
             if(value === 0){
-                listData = '<li data-target="#myCarousel' + columnNumber + '" class="active"></li></ol>';
+                listData = '<li data-target="#myCarousel' + columnNumber + '" class="active"></li>';
             } else {
-                listData = listData + '<li data-target="#myCarousel' + columnNumber + '" ></li></ol>';
+                listData = listData + '<li data-target="#myCarousel' + columnNumber + '" ></li>';
             }
         }
         carouselHTMLChunk = carouselHTMLChunk.replace("{1}", listData);
