@@ -8,6 +8,7 @@ $(document).ready(function () {
     renderImages_Contribution("4", "img/Learning.txt");
     renderImages_Contribution("5", "img/Republic.txt");
     renderImages_Contribution("6", "img/ImageList.txt");
+    renderImages(); 
     //renderImages_Before();
     //renderImages_Transition();
     //renderImages_After();
@@ -134,7 +135,7 @@ renderImages_Contribution = function (columnNumber, imageURL) {
 },
 
 
-/*renderImages = function () {
+renderImages = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
@@ -153,7 +154,7 @@ renderImages_Contribution = function (columnNumber, imageURL) {
                + ' </a>'
             + '</div>';
             
-            $("#dilseGallery").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+            $("#dilseGallery7").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
@@ -163,7 +164,7 @@ renderImages_Contribution = function (columnNumber, imageURL) {
 
 },
 
-renderImages_Before = function () {
+/*renderImages_Before = function () {
     $.get('img/ImageList_Before.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
