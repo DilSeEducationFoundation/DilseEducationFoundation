@@ -52,8 +52,9 @@ renderImages_Contribution = function (columnNumber) {
                                 '<div id="innerCarousel" class="carousel-inner" role="listbox"></div></div>';
         
         var navCount = max%9 === 0 ? max/9 : max/9 + 1 ; 
+        navCount = parseInt(navCount,10);
         var listData = '<li data-target="#myCarousel' + columnNumber + '" ></li></ol>';
-        for(navCount = 0; navCount < navCount; navCount++ ){
+        for(var value = 0; value < navCount; value++ ){
             if(navCount === 0){
                 listData = '<li data-target="#myCarousel' + columnNumber + '" class="active"></li></ol>';
             } else {
