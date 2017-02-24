@@ -5,12 +5,15 @@ $(document).ready(function () {
     renderImages_Contribution("1", "img/ImageList_Before.txt");
     renderImages_Contribution("2", "img/ImageList_Transition.txt");
     renderImages_Contribution("3", "img/ImageList_After.txt");
+    renderImages_Contribution("4", "img/Learning.txt");
+    renderImages_Contribution("5", "img/Republic.txt");
+    renderImages_Contribution("6", "img/ImageList.txt");
     //renderImages_Before();
     //renderImages_Transition();
     //renderImages_After();
-    renderImages_Events1();
-    renderImages_Events2();
-    renderImages_Events3();
+    //renderImages_Events1();
+    //renderImages_Events2();
+    //renderImages_Events3();
     
 });
 var sendMail = function () {
