@@ -29,12 +29,12 @@ var sendMail = function () {
 },
 
 renderImages_Contribution = function (columnNumber) {
-    $.get('img/ImageList.txt', function (data) {
+    $.get('img/ImageList_Before.txt', function (data) {
         var lines = data.split('\n');
-        var col1 = 30;
-        var col2 = 80;
-        var col3 = 172;
-        var max;
+       // var col1 = 30;
+      //  var col2 = 80;
+       // var col3 = 172;
+        var max = lines.length-1;
         var initial;
         var gridFlag = 1;
         var limit = 0;
