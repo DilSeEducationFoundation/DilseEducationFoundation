@@ -16,6 +16,15 @@ $(document).ready(function () {
     //renderImages_Events3();
     
 });
+
+$('.carousel .carousel-control').click(function(event) {
+              if (event.stopPropagation) {    // standard
+                   event.stopPropagation();
+               } else {    // IE6-8
+                    event.cancelBubble = true;
+               }
+          });
+
 var sendMail = function () {
     var contributionType = [];
     $("input:checkbox[name=type]:checked").each(function(){
