@@ -355,7 +355,7 @@ hr {
 	width: 50%;
 }
 
-#dilseGallery1, #dilseGallery2, #dilseGallery3, #dilseGallery4, #dilseGallery5, #dilseGallery6{
+#dilseGallery1, #dilseGallery2, #dilseGallery3, #dilseGallery4, #dilseGallery5, #dilseGallery6, #dilseGallerySlider{
 	height: 300px;
 	overflow: auto;
 }
