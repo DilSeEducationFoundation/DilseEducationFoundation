@@ -10,14 +10,12 @@ RepublicDay17.JPG
 RepublicDay19.JPG
 RepublicDay21.JPG
 RepublicDay20.JPG
-RepublicDay24.JPG
 RepublicDay29.JPG
 RepublicDay30.JPG
 RepublicDay34.JPG
 RepublicDay35.JPG
 RepublicDay36.JPG
 RepublicDay40.JPG
-RepublicDay41.JPG
 RepublicDay49.JPG
 RepublicDay50.JPG
 RepublicDay52.JPG
@@ -46,8 +44,6 @@ RepublicDay96.JPG
 RepublicDay94.JPG
 RepublicDay98.JPG
 RepublicDay99.JPG
-RepublicDay100.JPG
-RepublicDay102.JPG
 RepublicDay104.JPG
 RepublicDay105.JPG
 RepublicDay106.JPG
@@ -61,8 +57,6 @@ RepublicDay123.JPG
 RepublicDay124.JPG
 RepublicDay125.JPG
 RepublicDay129.JPG
-RepublicDay127.JPG
-RepublicDay126.JPG
 RepublicDay2.JPG
 RepublicDay4.JPG
 RepublicDay5.JPG
