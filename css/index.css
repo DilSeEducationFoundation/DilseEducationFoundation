@@ -371,3 +371,17 @@ hr {
 {
 	height: 200px;
 }
+
+ .carousel-inner > .galleryitem > div > img{
+    width: 40%;
+      height: 20%;
+      display: inline-table;
+      margin: auto;
+  }
+  
+  .carousel-inner > .galleryitem > div > a > img {
+      width: 50%;
+      height: 50%;
+      display: inline-block;
+      margin: auto;
+  }
