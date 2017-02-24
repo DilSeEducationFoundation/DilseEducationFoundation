@@ -64,8 +64,8 @@ renderImages_Contribution = function (columnNumber, imageURL) {
         var carouselHTMLChunk = '<div id="myCarousel' + columnNumber +'" class="carousel slide" data-ride="carousel">'+
                                 '<ol class="carousel-indicators"> {1}</ol>' +                                
                                 '<div id="innerCarousel' + columnNumber +'" class="carousel-inner" role="listbox"></div>' + 
-            '<a class="left carousel-control" href="#myCarousel' + columnNumber +'" role="button" data-slide="prev">      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>' + 
-            '<a class="right carousel-control" href="#myCarousel' + columnNumber +'" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>' +
+            //'<a class="left carousel-control" href="#myCarousel' + columnNumber +'" role="button" data-slide="prev">      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>' + 
+            //'<a class="right carousel-control" href="#myCarousel' + columnNumber +'" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>' +
             '</div>';
         
         var navCount = max%9 === 0 ? max/9 : max/9 + 1 ; 
@@ -134,7 +134,7 @@ renderImages_Contribution = function (columnNumber, imageURL) {
 },
 
 
-renderImages = function () {
+/*renderImages = function () {
     $.get('img/ImageList.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
@@ -336,7 +336,7 @@ renderImages_Events3 = function () {
         });
     });
 
-},
+},*/
 
 configureRenderMoreText = function(){
     var showChar = 300;
