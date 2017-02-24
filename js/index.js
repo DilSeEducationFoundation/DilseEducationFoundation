@@ -94,7 +94,7 @@ renderImages_Contribution = function (columnNumber) {
             }
             limit = limit + 1;
             slideHTML = slideHTML + portfolioGallery.replace("{0}", item).replace("{1}", item);  
-            if(iCount === max){
+            if(iCount === max-1){
                 slideHTML = slideHTML + '</div>';
                 $("#dilseGallery"+columnNumber).append(slideHTML);
             }
