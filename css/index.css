@@ -398,4 +398,5 @@ hr {
 }
 .imagegallery .img-responsive {
     width: 100%;
+    height: 125px;
 }
