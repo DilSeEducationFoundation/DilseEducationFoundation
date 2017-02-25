@@ -410,6 +410,7 @@ hr {
     /* padding-top: 200px; */
     /* position: absolute; */
     top: 800px;
-    /* width: 100%; */
+    width: 50%;
+    height:50%
     /* z-index: -1; */
 }
