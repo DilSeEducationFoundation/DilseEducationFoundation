@@ -98,7 +98,7 @@ renderImages_Contribution = function (columnNumber, imageURL) {
                         + '</div>'
                    + '</div>'
                + ' </a>'
-            +'<figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>'
+           
             + '</div>';
             
                      
@@ -182,7 +182,9 @@ renderImages_Press = function () {
                            + '</div>'
                         + '</div>'
                    + '</div>'
+            
                + ' </a>'
+             +'<figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>'
             + '</div>';
             
             $("#dilseGallery9").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
