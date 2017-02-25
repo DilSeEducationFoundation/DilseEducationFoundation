@@ -184,8 +184,7 @@ renderImages_Press = function () {
                    + '</div>'
             
                + ' </a>'
-             +'<figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>'
-            + '</div>';
+             + '</div>';
             
             $("#dilseGallery9").append(portfolioGallery.replace("{0}", item).replace("{1}", item));
         }
