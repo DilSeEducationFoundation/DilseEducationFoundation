@@ -98,6 +98,7 @@ renderImages_Contribution = function (columnNumber, imageURL) {
                         + '</div>'
                    + '</div>'
                + ' </a>'
+            +'<figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>'
             + '</div>';
             
                      
