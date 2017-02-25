@@ -9,6 +9,7 @@ $(document).ready(function () {
     renderImages_Contribution("5", "img/ImageList_Republic.txt");
     renderImages_Contribution("6", "img/ImageList_Independence.txt");
     renderImages_Contribution("7", "img/ImageList_Collector.txt");
+    
     /*renderImages();*/
     renderImages_Press();
     //renderImages_Before();
