@@ -403,14 +403,14 @@ hr {
 
 .circle-background
 {
-    background-color: #eb9700;
+    background-color: #9f8115;
     border-radius: 50%;
     /* left: 0; */
     opacity: .1;
     /* padding-top: 200px; */
-    /* position: absolute; */
-    top: 800px;
+    position: absolute;
+    
     width: 50%;
-    height:50%
-    /* z-index: -1; */
+    height:1330px;
+    z-index: -1;
 }
