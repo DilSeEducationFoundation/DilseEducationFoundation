@@ -204,7 +204,7 @@ renderImages_MlaMlc = function () {
     $.get('img/ImageList_MlaMlc.txt', function (data) {
         var lines = data.split('\n');
         for (var iCount = 0; iCount <lines.length-1; iCount++) {
-            var item = 'img/ImageList_MlaMlc.txt/' + lines[iCount];
+            var item = 'img/DilSePhotoshoot/' + lines[iCount];
             var portfolioGallery = '<div class="col-sm-4">'
                 + '<a href="{0}" class="portfolio-box">'
                    + '<img src="{1}" class="img-responsive" alt="">'
