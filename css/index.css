@@ -438,14 +438,16 @@ hr {
 }
 .campaign_background
 {
-	 background-color: #9f8115;
-    border-radius: 50%;
+
+    background-color: gray;
+
     /* left: 0; */
     opacity: .1;
     /* padding-top: 200px; */
     position: absolute;
     
-    width: 100%;
+    width: 25%;
+   height: 400px;
    
     z-index: -1;
 }
