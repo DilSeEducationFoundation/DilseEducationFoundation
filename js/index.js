@@ -190,7 +190,7 @@ renderImages_School1 = function (columnNumber, imageURL) {
                + ' </a>'
             + '</div>';
             
-            $("#school1" + columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
+            $("#school" + columnNumber).append(portfolioGallery.replace("{0}", item).replace("{1}", item));
         }
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js', function () {
             $('#portfolio .img-responsive').lazyload({
