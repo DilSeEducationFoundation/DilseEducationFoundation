@@ -436,3 +436,16 @@ hr {
 #page-top1, #page-top1 h2 {
     font-family: "Segoe UI";
 }
+.campaign_background
+{
+	 background-color: #9f8115;
+    border-radius: 50%;
+    /* left: 0; */
+    opacity: .1;
+    /* padding-top: 200px; */
+    position: absolute;
+    
+    width: 100%;
+   
+    z-index: -1;
+}
