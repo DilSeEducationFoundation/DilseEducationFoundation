@@ -416,9 +416,13 @@ hr {
 }
 .campaign {
 	display: inline-flex;
+	width:100%;
 }
 .campaign-cols{
 	width: 25%;
-	background-color:#9f8115;
+	
 }
-
+.school1, school2, school3, school4
+{
+	background-color:#b8293d;
+}
