@@ -420,6 +420,7 @@ hr {
 }
 .campaign-cols{
 	width: 100%;
+	padding:0px 10px 0px 0px;
 	
 	
 }
@@ -446,7 +447,7 @@ hr {
     /* padding-top: 200px; */
     position: absolute;
     
-    width: 25%;
+    width: 23.9%;
    height: 400px;
    
     z-index: -1;
